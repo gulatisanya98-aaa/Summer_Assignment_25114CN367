@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int arr[5]={2,4,5,7,6};
+    int left=0;
+    int right=4;
+    while(left<right)
+    {
+        int temp=arr[left];
+        arr[left]=arr[right];
+        arr[right]=temp;
+        left++;
+        right--;
+    }
+    for(int i=0;i<5;i++)
+    {
+        printf("%d",arr[i]);
+    }
+    return 0;
+}
